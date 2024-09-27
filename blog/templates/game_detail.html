@@ -1,0 +1,31 @@
+<!-- game_detail.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ game.title }}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <style>
+        body {
+            background-color: rgb(141, 11, 248);
+            color: rgb(0, 0, 0)
+        }
+        a {
+            color: black;
+            font-weight: bold;
+        }
+        a:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body class="game-detail">
+    <h1>{{ game.title }}</h1>
+    <img src="{{ game.image.url }}" alt="{{ game.name }}" style="max-width: 300px;">  <!-- Display the image -->
+    <p><strong>Release Date:</strong> {{ release_info }}</p>
+    <p><strong>Developer:</strong> {{ game.developer }}</p>
+    <p><strong>Genre:</strong> {{ game.genre }}</p>
+    <p>{{ game.description }}</p>
+</body>
+</html>

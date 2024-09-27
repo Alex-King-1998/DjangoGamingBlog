@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Gaming Lounge</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>The Gaming Lounge</h1>
+    <img src="{% static 'images/game_controller.jpg' %}" alt="A picture of a game controller">
+
+    <nav>
+        <a href="{% url 'blog_index' %}" class="home-link">Home</a>
+        <a href="{% url 'games_list' %}">Games List</a>  <!-- New Games List link -->
+        <a href="{% url 'contact' %}" class="contact-link">Contact us</a>
+    </nav>
+
+    <hr>
+    {% block page_title %}{% endblock page_title %}
+    {% block page_content %}{% endblock page_content %}
+</body>
+</html>

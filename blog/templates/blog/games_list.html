@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <style>
+        body {
+            background-color: rgb(141, 11, 248);
+            color: rgb(0, 0, 0)
+        }
+        a {
+            color: black;
+            font-weight: bold;
+        }
+        a:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body class="games-list">
+    <h1>Games List</h1>
+    <p><a href="{% url 'blog_index' %}">Home</a></p>
+    <h2>A to Z</h2>
+    <div class="game-list">
+        <h3>A</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='A Plague Tale: Requiem' %}">A Plague Tale: Requiem</a></li>
+            <li><a href="{% url 'game_detail' game_name='Abandoned' %}">Abandoned</a></li>
+            <li><a href="{% url 'game_detail' game_name='Ace Combat 7: Skies Unknown' %}">Ace Combat 7: Skies Unknown</a></li>
+            <li><a href="{% url 'game_detail' game_name='Alan Wake Remastered' %}">Alan Wake Remastered</a></li>
+            <li><a href="{% url 'game_detail' game_name='Among Us' %}">Among Us</a></li>
+            <li><a href="{% url 'game_detail' game_name='Assassin\'s Creed Valhalla' %}">Assassin's Creed Valhalla</a></li>
+            <li><a href="{% url 'game_detail' game_name='Astro Bot' %}">Astro Bot</a></li>
+            <li><a href="{% url 'game_detail' game_name='Avengers, Marvel\'s' %}">Avengers, Marvel's</a></li>
+        </ul>
+        
+        <h3>B</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Back 4 Blood' %}">Back 4 Blood</a></li>
+            <li><a href="{% url 'game_detail' game_name='Battlefield 2042' %}">Battlefield 2042</a></li>
+            <li><a href="{% url 'game_detail' game_name='Biomutant' %}">Biomutant</a></li>
+            <li><a href="{% url 'game_detail' game_name='Bioshock Infinite' %}">Bioshock Infinite</a></li>
+            <li><a href="{% url 'game_detail' game_name='Blacktail' %}">Blacktail</a></li>
+            <li><a href="{% url 'game_detail' game_name='Bloodborne' %}">Bloodborne</a></li>
+            <li><a href="{% url 'game_detail' game_name='Bugsnax' %}">Bugsnax</a></li>
+            <li><a href="{% url 'game_detail' game_name='Burnout Paradise Remastered' %}">Burnout Paradise Remastered</a></li>
+        </ul>
+        
+        <h3>C</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Call of Duty: Black Ops Cold War' %}">Call of Duty: Black Ops Cold War</a></li>
+            <li><a href="{% url 'game_detail' game_name='Call of Duty: Vanguard' %}">Call of Duty: Vanguard</a></li>
+            <li><a href="{% url 'game_detail' game_name='Celeste' %}">Celeste</a></li>
+            <li><a href="{% url 'game_detail' game_name='Chivalry 2' %}">Chivalry 2</a></li>
+            <li><a href="{% url 'game_detail' game_name='Control: Ultimate Edition' %}">Control: Ultimate Edition</a></li>
+            <li><a href="{% url 'game_detail' game_name='Crash Bandicoot 4: It\'s About Time' %}">Crash Bandicoot 4: It's About Time</a></li>
+            <li><a href="{% url 'game_detail' game_name='Cyberpunk 2077' %}">Cyberpunk 2077</a></li>
+        </ul>
+        
+        <h3>D</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Dying Light 2: Stay Human' %}">Dying Light 2: Stay Human</a></li>
+            <li><a href="{% url 'game_detail' game_name='Demon\'s Souls' %}">Demon's Souls</a></li>
+            <li><a href="{% url 'game_detail' game_name='Deathloop' %}">Deathloop</a></li>
+            <li><a href="{% url 'game_detail' game_name='Devil May Cry 5: Special Edition' %}">Devil May Cry 5: Special Edition</a></li>
+            <li><a href="{% url 'game_detail' game_name='Dirt 5' %}">Dirt 5</a></li>
+            <li><a href="{% url 'game_detail' game_name='Disco Elysium: The Final Cut' %}">Disco Elysium: The Final Cut</a></li>
+        </ul>
+        
+        <h3>E</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Elden Ring' %}">Elden Ring</a></li>
+            <li><a href="{% url 'game_detail' game_name='Embr' %}">Embr</a></li>
+            <li><a href="{% url 'game_detail' game_name='Escape from Tarkov' %}">Escape from Tarkov</a></li>
+            <li><a href="{% url 'game_detail' game_name='Evil Dead: The Game' %}">Evil Dead: The Game</a></li>
+        </ul>
+
+        <h3>F</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='F1 2024' %}">F1 2024</a></li>
+            <li><a href="{% url 'game_detail' game_name='Far Cry 6' %}">Far Cry 6</a></li>
+            <li><a href="{% url 'game_detail' game_name='FIFA 24' %}">FIFA 24</a></li>
+            <li><a href="{% url 'game_detail' game_name='Final Fantasy VII Remake Intergrade' %}">Final Fantasy VII Remake Intergrade</a></li>
+            <li><a href="{% url 'game_detail' game_name='For Honor' %}">For Honor</a></li>
+            <li><a href="{% url 'game_detail' game_name='Forspoken' %}">Forspoken</a></li>
+        </ul>
+
+        <h3>G</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Ghost of Tsushima: Director\'s Cut' %}">Ghost of Tsushima: Director's Cut</a></li>
+            <li><a href="{% url 'game_detail' game_name='God of War: Ragnarok' %}">God of War: Ragnarok</a></li>
+            <li><a href="{% url 'game_detail' game_name='Gran Turismo 7' %}">Gran Turismo 7</a></li>
+            <li><a href="{% url 'game_detail' game_name='Guardians of the Galaxy, Marvel\'s' %}">Guardians of the Galaxy, Marvel's</a></li>
+        </ul>
+
+        <h3>H</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Hitman 3' %}">Hitman 3</a></li>
+            <li><a href="{% url 'game_detail' game_name='Horizon Forbidden West' %}">Horizon Forbidden West</a></li>
+            <li><a href="{% url 'game_detail' game_name='Hyper Light Drifter' %}">Hyper Light Drifter</a></li>
+        </ul>
+
+        <h3>I</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Immortals Fenyx Rising' %}">Immortals Fenyx Rising</a></li>
+            <li><a href="{% url 'game_detail' game_name='It Takes Two' %}">It Takes Two</a></li>
+        </ul>
+
+        <h3>J</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Judgment' %}">Judgment</a></li>
+            <li><a href="{% url 'game_detail' game_name='Journey to the Savage Planet' %}">Journey to the Savage Planet</a></li>
+        </ul>
+
+        <h3>K</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Kena: Bridge of Spirits' %}">Kena: Bridge of Spirits</a></li>
+            <li><a href="{% url 'game_detail' game_name='Kingdom Hearts: Melody of Memory' %}">Kingdom Hearts: Melody of Memory</a></li>
+            <li><a href="{% url 'game_detail' game_name='Kaze and the Wild Masks' %}">Kaze and the Wild Masks</a></li>
+        </ul>
+
+        <h3>L</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Little Nightmares II' %}">Little Nightmares II</a></li>
+            <li><a href="{% url 'game_detail' game_name='Lost Judgment' %}">Lost Judgment</a></li>
+        </ul>
+
+        <h3>M</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Marvel\'s Spider-Man: Miles Morales' %}">Marvel's Spider-Man: Miles Morales</a></li>
+            <li><a href="{% url 'game_detail' game_name='Mortal Kombat 11' %}">Mortal Kombat 11</a></li>
+            <li><a href="{% url 'game_detail' game_name='Monster Hunter: Rise' %}">Monster Hunter: Rise</a></li>
+            <li><a href="{% url 'game_detail' game_name='MultiVersus' %}">MultiVersus</a></li>
+        </ul>
+        
+        <h3>N</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='NBA 2k24' %}">NBA 2k24</a></li>
+            <li><a href="{% url 'game_detail' game_name='No Man\'s Sky' %}">No Man's Sky</a></li>
+        </ul>
+
+        <h3>O</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Oddworld: Soulstorm' %}">Oddworld: Soulstorm</a></li>
+            <li><a href="{% url 'game_detail' game_name='Outriders' %}">Outriders</a></li>
+            <li><a href="{% url 'game_detail' game_name='Overcooked! All You Can Eat' %}">Overcooked! All You Can Eat</a></li>
+        </ul>
+
+        <h3>P</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Pathfinder: Wrath of the Righteous' %}">Pathfinder: Wrath of the Righteous</a></li>
+            <li><a href="{% url 'game_detail' game_name='Psychonauts 2' %}">Psychonauts 2</a></li>
+        </ul>
+
+        <h3>R</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Ratchet & Clank: Rift Apart' %}">Ratchet & Clank: Rift Apart</a></li>
+            <li><a href="{% url 'game_detail' game_name='Red Dead Redemption 2' %}">Red Dead Redemption 2</a></li>
+            <li><a href="{% url 'game_detail' game_name='Resident Evil 2 (2019)' %}">Resident Evil 2 (2019)</a></li>
+            <li><a href="{% url 'game_detail' game_name='Resident Evil 3 (2020)' %}">Resident Evil 3 (2020)</a></li>
+            <li><a href="{% url 'game_detail' game_name='Resident Evil 4 (2023)' %}">Resident Evil 4 (2023)</a></li>
+            <li><a href="{% url 'game_detail' game_name='Resident Evil Village' %}">Resident Evil Village</a></li>
+            <li><a href="{% url 'game_detail' game_name='Rocket League' %}">Rocket League</a></li>
+        </ul>
+
+        <h3>S</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Sackboy: A Big Adventure' %}">Sackboy: A Big Adventure</a></li>
+            <li><a href="{% url 'game_detail' game_name='Scarlet Nexus' %}">Scarlet Nexus</a></li>
+            <li><a href="{% url 'game_detail' game_name='Sea of Solitude: The Director\'s Cut' %}">Sea of Solitude: The Director's Cut</a></li>
+            <li><a href="{% url 'game_detail' game_name='Shin Megami Tensei V' %}">Shin Megami Tensei V</a></li>
+            <li><a href="{% url 'game_detail' game_name='Star Wars Jedi: Fallen Order' %}">Star Wars Jedi: Fallen Order</a></li>
+        </ul>
+
+        <h3>T</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Tales of Arise' %}">Tales of Arise</a></li>
+            <li><a href="{% url 'game_detail' game_name='The Ascent' %}">The Ascent</a></li>
+            <li><a href="{% url 'game_detail' game_name='The Last of Us Part II' %}">The Last of Us Part II</a></li>
+            <li><a href="{% url 'game_detail' game_name='The Medium' %}">The Medium</a></li>
+            <li><a href="{% url 'game_detail' game_name='Tom Clancy\'s Rainbow Six Siege' %}">Tom Clancy's Rainbow Six Siege</a></li>
+        </ul>
+
+        <h3>U</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Uncharted 4' %}">Uncharted 4</a></li>
+            <li><a href="{% url 'game_detail' game_name='Uncharted: The Lost Legacy' %}">Uncharted: The Lost Legacy</a></li>
+            <li><a href="{% url 'game_detail' game_name='UnderMine' %}">UnderMine</a></li>
+        </ul>
+
+        <h3>V</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Valorant' %}">Valorant</a></li>
+            <li><a href="{% url 'game_detail' game_name='Vampire: The Masquerade - Bloodlines 2' %}">Vampire: The Masquerade - Bloodlines 2</a></li>
+            <li><a href="{% url 'game_detail' game_name='Vanquish' %}">Vanquish</a></li>
+            <li><a href="{% url 'game_detail' game_name='V Rising' %}">V Rising</a></li>
+        </ul>
+
+        <h3>W</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Watch Dogs: Legion' %}">Watch Dogs: Legion</a></li>
+            <li><a href="{% url 'game_detail' game_name='Warframe' %}">Warframe</a></li>
+            <li><a href="{% url 'game_detail' game_name='WWE 2K Battlegrounds' %}">WWE 2K Battlegrounds</a></li>
+        </ul>
+
+        <h3>Y</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Yakuza: Like a Dragon' %}">Yakuza: Like a Dragon</a></li>
+        </ul>
+
+        <h3>Z</h3>
+        <ul>
+            <li><a href="{% url 'game_detail' game_name='Zelda: Breath of the Wild' %}">Zelda: Breath of the Wild</a></li>
+            <li><a href="{% url 'game_detail' game_name='Zelda: Tears of the Kingdom' %}">Zelda: Tears of the Kingdom</a></li>
+        </ul>
+    </div>
+</body>
+<!-- games_list.html -->
+<ul>
+    {% for game in games %}
+        <li>
+            <a href="{% url 'game_detail' game.id %}">{{ game.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+</html>
